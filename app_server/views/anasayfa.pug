@@ -1,81 +1,25 @@
 extends layout
+include fonksiyonlar/yildiz
 block content
     #banner.page-header
         .row
             .col-lg-6 
                 h1 
-                    | MekanBul 
-                    small &nbsp; Civarınızdaki mekanları keşfedin!
-    .row 
-        .row-list-group 
-        .col-xs-12.col-sm-12 
-            .col-xs-12.list-group-item
-                h4 
-                    a(href='/mekan') Starbucks
-                    small &nbsp;
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star-empty
-                span.badge.pull-right.badge-default 2km
-                p.address Centrum Garden AVM
-                p 
-                    span.label.label-warning dünya kahveleri 
-                    | &nbsp;
-                    span.label.label-warning kekler 
-                    | &nbsp;
-                    span.label.label-warning pastalar
-                    | &nbsp;
-
-    | &nbsp;
-    .row 
-        .row-list-group 
-        .col-xs-12.col-sm-12 
-            .col-xs-12.list-group-item
-                h4 
-                    a(href='/mekan') GymFactory
-                    small &nbsp;
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                span.badge.pull-right.badge-default 1km
-                p.address Bahçelievler Mah. 141. Cd. 
-                p 
-                    span.label.label-warning fitness
-                    | &nbsp;
-                    span.label.label-warning crossfit 
-                    | &nbsp;
-                    span.label.label-warning bodybuilding
-                    | &nbsp;
-                    span.label.label-warning powerlifting 
-                    | &nbsp;
-                    span.label.label-warning pilates 
-                    | &nbsp;
-
-    | &nbsp;
-    .row 
-        .row-list-group 
-        .col-xs-12.col-sm-12 
-            .col-xs-12.list-group-item
-                h4 
-                    a(href='/mekan') Kampüs Cafe
-                    small &nbsp;
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star-empty
-                span.badge.pull-right.badge-default 3km
-                p.address Fatih Mah. 4504 Sk. No:16
-                p 
-                    span.label.label-warning tay
-                    | &nbsp;
-                    span.label.label-warning yeme içme
-                    | &nbsp;
-                    span.label.label-warning nargile
-                    | &nbsp;
-                    span.label.label-warning masa oyunları
-                    | &nbsp;
+                    | #{sayfaBaslik.siteAd} 
+                    small &nbsp; #{sayfaBaslik.slogan}
+    .row
+        each mekan in mekanlar
+            .row-list-group 
+            .col-xs-12.col-sm-12 
+                .col-xs-12.list-group-item
+                    h4 
+                        a(href='/mekan') #{mekan.ad}
+                        small &nbsp;
+                        +puanOlustur(mekan.puan)
+                    span.badge.pull-right.badge-default #{mekan.mesafe}
+                    p.address #{mekan.adres}
+                    p 
+                        each imkan in mekan.imkanlar
+                            span.label.label-warning #{imkan}
+                            | &nbsp;
+                        
