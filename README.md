@@ -1,3 +1,6 @@
+# MekanBul Replit Adresi
+[https://mekanbul.alperkaplan30.repl.co?enlem=37&boylam=30](https://mekanbul.alperkaplan30.repl.co?enlem=37&boylam=30)
+
 # API Collections Test
 ![](images/collectionrunall.png)
 
