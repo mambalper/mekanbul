@@ -1,4 +1,5 @@
-# Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği "Web Teknolojileri ve Programlama" dersi kapsamında geliştirilen web uygulamasıdır.
+# MekanBul Uygulaması 
+Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği "Web Teknolojileri ve Programlama" dersi kapsamında geliştirilen web uygulamasıdır.
 
 # MekanBul Replit Adresi
 [https://mekanbul.alperkaplan30.repl.co?enlem=37&boylam=30](https://mekanbul.alperkaplan30.repl.co?enlem=37&boylam=30)
