@@ -1,5 +1,5 @@
 # MekanBul Uygulaması 
-Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği "Web Teknolojileri ve Programlama" dersi kapsamında geliştirilen web uygulamasıdır.
+Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği "Web Teknolojileri ve Programlama" dersi kapsamında geliştirilen web uygulamasıdır. MekanBul insanların bulunduğu konum civarındaki mekanları ve mekanların sunduğu imkanları görmelerini, mekanlara yorum yapabilmelerini sağlamaktadır.
 
 # MekanBul Replit Adresi
 [https://mekanbul.alperkaplan30.repl.co?enlem=37&boylam=30](https://mekanbul.alperkaplan30.repl.co?enlem=37&boylam=30)
